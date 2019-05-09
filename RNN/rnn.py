@@ -8,6 +8,7 @@ from keras.models import Model, Sequential
 from keras.layers import Input, Embedding, LSTM, Dense
 from keras.layers.wrappers import Bidirectional
 from keras.optimizers import Adam
+from keras.callbacks import ModelCheckpoint
 from scripts.TBCallbacks import TrainValTensorBoard
 
 parser = argparse.ArgumentParser()
