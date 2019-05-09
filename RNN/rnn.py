@@ -104,6 +104,10 @@ rnn.compile(loss='binary_crossentropy',
 
 
 # Add callbacks
+directory = "./output/"+args.name+"/"
+if not os.path.exists(directory):
+    os.makedirs(directory)
+
 callbacks = []
 savepath = "./output/weights/"
 if not os.path.exists(savepath):
