@@ -1,6 +1,7 @@
 import random 
 import numpy as np
 import pickle
+import argparse
 import os
 from keras.preprocessing.text import one_hot, text_to_word_sequence
 from keras.models import Model, Sequential
