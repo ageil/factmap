@@ -48,16 +48,15 @@ for r in valid:
 
 # shuffle IDs and split into train/val
 ids = list(data.keys())
+random.seed(2)
 random.shuffle(ids)
 
-ids = list(data.keys())
-random.shuffle(ids)
-
-trainFrac = 0.8
+trainFrac = 0.7
+validFrac = 0.2
 partition = dict()
 partition["train"] = {ID: data[ID] for ID in ids[:int(len(ids)*trainFrac)]}
-partition["valid"] = {ID: data[ID] for ID in ids[int(len(ids)*trainFrac):]}
-
+partition["valid"] = {ID: data[ID] for ID in ids[int(len(ids)*trainFrac):int(len(ids)*(trainFrac + validFrac))]}
+partition["test"] = {ID: data[ID] for ID in ids[int(len(ids)*(trainFrac + validFrac)):]}
 
 # Define data generator
 def generator(partition, mode="train", batch_size=args.batch_size):
@@ -96,7 +95,7 @@ rnn = Sequential()
 rnn.add(Embedding(vocab_size, 64, input_length=max_length))
 rnn.add(Bidirectional(LSTM(32, return_sequences=True)))
 rnn.add(Bidirectional(LSTM(16, return_sequences=False)))
-rnn.add(Dense(1))
+rnn.add(Dense(1, activation='sigmoid'))
 
 rnn.compile(loss='binary_crossentropy',
             optimizer=Adam(lr=args.learn_rate),
