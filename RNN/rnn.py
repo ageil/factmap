@@ -145,7 +145,8 @@ hist = rnn.fit_generator(generator=gen_train,
                          epochs=n_epochs,
                          validation_data=gen_valid,
                          validation_steps=valid_steps_per_epoch,
-                         verbose=1)
+                         verbose=1,
+                         callbacks=callbacks)
 
 
 # Save final model
