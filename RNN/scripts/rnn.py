@@ -32,7 +32,7 @@ def singleRNN(embedding_matrix, trainable=False, lr=1e-3, dropout=False):
 	            metrics=['accuracy'])
 	return rnn_single
 
-def dualRNN(embedding_matrix_inv, embedding_matrix_oov, trainable_inv=False, trainable_oov=True, lr=1e-3), dropout=False:
+def dualRNN(embedding_matrix_inv, embedding_matrix_oov, trainable_inv=False, trainable_oov=True, lr=1e-3, dropout=False):
 	rnn_in0 = Input(shape=(None,), name='rnn_in_inv')
 	rnn0 = Embedding(input_dim=embedding_matrix_inv.shape[0], 
 	                output_dim=embedding_matrix_inv.shape[1], 
