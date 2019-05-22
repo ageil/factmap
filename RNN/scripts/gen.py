@@ -3,18 +3,20 @@ from keras.utils import Sequence
 
 
 class DataGenerator(Sequence):
-    def __init__(self, partition, mode="train", all_text=False, train_oov=False, batch_size=16):
+    def __init__(self, partition, mode="train", all_text=False, train_oov=False, batch_size=16, return_id=False):
         """Initialization"""
         assert type(train_oov) == bool
         assert type(all_text) == bool
         assert mode in partition.keys()
         assert batch_size > 0
+        assert type(return_id) == bool
         
         self.partition = partition
         self.mode = mode
         self.all_text = all_text
         self.train_oov = train_oov
         self.batch_size = batch_size
+        self.return_id = return_id
         self.IDs = list(partition[mode].keys())
         self.shuffle = True if mode == "train" else False
         self.idx = 0
@@ -125,4 +127,7 @@ class DataGenerator(Sequence):
                 y[i,:] = tgt
         
         batch = X, y if self.mode != "predict" else X
+
+        if self.return_id:
+            batch = batch_IDs, batch
         return batch
