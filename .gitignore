@@ -1,0 +1,45 @@
+Community Detection/factmap.gephi
+Community Detection/factnet.gexf
+Community Detection/fakenet.gexf
+Community Detection/fakenet_colors
+Community Detection/fakenet_gephi.graphml
+Community Detection/sankey_communities.png
+Community Detection/sankey_factsubs.png
+Community Detection/sankey_fakesubs.png
+RNN/notebooks/adam.png
+RNN/notebooks/cmat_tall.png
+RNN/notebooks/cmat_tall_abs.png
+RNN/notebooks/drop.png
+RNN/notebooks/oov.png
+RNN/notebooks/rnn_dual.png
+RNN/notebooks/rnn_single.png
+RNN/notebooks/run_r_drop_logs_training-tag-acc.csv
+RNN/notebooks/run_r_drop_logs_validation-tag-acc.csv
+RNN/notebooks/run_r_logs_training-tag-acc.csv
+RNN/notebooks/run_r_logs_validation-tag-acc.csv
+RNN/notebooks/run_r_oov_logs_training-tag-acc.csv
+RNN/notebooks/run_r_oov_logs_validation-tag-acc.csv
+RNN/notebooks/run_r_sgd_logs_training-tag-acc.csv
+RNN/notebooks/run_r_sgd_logs_validation-tag-acc.csv
+RNN/notebooks/run_r_tall_drop_logs_training-tag-acc.csv
+RNN/notebooks/run_r_tall_drop_logs_validation-tag-acc.csv
+RNN/notebooks/run_r_tall_logs_training-tag-acc.csv
+RNN/notebooks/run_r_tall_logs_validation-tag-acc.csv
+RNN/notebooks/run_rc_drop_logs_training-tag-acc.csv
+RNN/notebooks/run_rc_drop_logs_validation-tag-acc.csv
+RNN/notebooks/run_rc_logs_training-tag-acc.csv
+RNN/notebooks/run_rc_logs_validation-tag-acc.csv
+RNN/notebooks/run_rc_oov_logs_training-tag-acc.csv
+RNN/notebooks/run_rc_oov_logs_validation-tag-acc.csv
+RNN/notebooks/run_rc_sgd_logs_training-tag-acc.csv
+RNN/notebooks/run_rc_sgd_logs_validation-tag-acc.csv
+RNN/notebooks/run_rc_tall_drop_logs_training-tag-acc.csv
+RNN/notebooks/run_rc_tall_drop_logs_validation-tag-acc.csv
+RNN/notebooks/run_rc_tall_drop_logs_validation-tag-loss.csv
+RNN/notebooks/run_rc_tall_logs_training-tag-acc.csv
+RNN/notebooks/run_rc_tall_logs_validation-tag-acc.csv
+RNN/notebooks/sgd.png
+RNN/notebooks/tall.png
+RNN/notebooks/tall_drop.png
+RNN/notebooks/val_loss.png
+RNN/notebooks/val_loss2.png
